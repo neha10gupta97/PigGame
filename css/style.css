@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper{
-  background-color: #fff;
+  background-color: #EB4D4D;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
   position: relative;
   width: 60%;
@@ -33,6 +33,7 @@ body {
 
 .player-panel-0, .player-panel-1{
   width: 50%;
+  color: #fff;
   padding: 7.5rem 10rem;
   text-align: center;
   position: relative;
@@ -46,13 +47,13 @@ body {
 
 .player-score{
   font-size: 6rem;
-  font-weight: 100;
-  color: #EB4D4D;
+  font-weight: 300;  
+  color: #222;
   margin-top: 1.25rem;
 }
 
 .player-current-box{
-  background-color: #EB4D4D;
+  background-color: #222;
   color: #fff;
   width: 55%;
   text-align: center;
@@ -65,7 +66,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: #222;
+  color: #EB4D4D;
 }
 
 .player-current-score{
@@ -73,11 +74,15 @@ body {
 }
 
 .active{
-  background-color: #f7f7f7;
+  background-color: #222;
 }
 
 .active .player-name{
   font-weight: 300;
+}
+
+.active .player-score{
+  color: #EB4D4D;
 }
 
 .active .player-name::after {
@@ -89,6 +94,15 @@ body {
   right: 8.5rem;
 }
 
+.active .player-current-box{
+  background-color: #EB4D4D;
+  color: #fff;
+}
+
+.active .player-current-label{
+  color: #222;
+}
+
 button{
   border: none;
   background-color: transparent;
@@ -96,6 +110,7 @@ button{
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
+  color: #fff;
   text-transform: uppercase;
   font-family: Lato;
   cursor: pointer;
@@ -103,7 +118,7 @@ button{
 }
 
 button:hover { font-weight: 600; }
-button:hover i { margin-right: 1.25px; }
+button:hover i { margin-right: 1.25rem; }
 
 button:focus {
     outline: none;
@@ -136,7 +151,7 @@ img{
   transform: translateX(-50%);
   width: 8rem;
   height: auto;
-  top: 15rem;
+  top: 18rem;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
