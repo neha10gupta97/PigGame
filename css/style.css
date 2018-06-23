@@ -103,6 +103,7 @@ body {
   color: #222;
 }
 
+
 button{
   border: none;
   background-color: transparent;
@@ -145,7 +146,7 @@ i{
   margin-top: -6px;
 }
 
-img{
+.dice{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -155,5 +156,7 @@ img{
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.winner { background-color: #f7f7f7; }
+.winner{
+  background-image: linear-gradient(to right bottom, rgba(256,256,256,.3),rgba(0,0,0,.9));
+}
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
